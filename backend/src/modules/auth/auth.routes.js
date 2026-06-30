@@ -2,7 +2,10 @@ const express = require('express');
 const authController = require('./auth.controller');
 const validate = require('../../middlewares/validate.middleware');
 const verifyJWT = require('../../middlewares/verifyJWT.middleware');
-const { otpLimiter } = require('../../middlewares/rateLimiter.middleware');
+const {
+  otpLimiter,
+  authLimiter
+} = require('../../middlewares/rateLimiter.middleware');
 const {
   requestOtpSchema,
   verifyOtpSchema,
@@ -18,13 +21,13 @@ router.post('/otp/request', otpLimiter, validate({ body: requestOtpSchema }), au
 router.post('/otp/verify', otpLimiter, validate({ body: verifyOtpSchema }), authController.verifyOtp);
 router.post(
   '/register/password',
-  otpLimiter, // public unauthenticated write endpoint - rate-limited like every other auth entry point
+  authLimiter,
   validate({ body: directPasswordRegistrationSchema }),
   authController.registerWithPassword
 );
 router.post(
   '/login/password',
-  otpLimiter, // same rate-limit cap as OTP - both are credential-guessing targets
+  authLimiter,
   validate({ body: loginWithPasswordSchema }),
   authController.loginWithPassword
 );

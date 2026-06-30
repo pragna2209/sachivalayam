@@ -34,7 +34,12 @@ const otpLimiter = buildLimiter({
   max: env.OTP_MAX_REQUESTS_PER_WINDOW,
   keyPrefix: 'otp'
 });
-
+// Separate limiter for password login and registration
+const authLimiter = buildLimiter({
+  windowMinutes: 10,
+  max: 20,
+  keyPrefix: 'auth'
+});
 // Tighter limiter for anonymous tracking lookups and anonymous complaint
 // submission - both are attractive to brute-force/enumeration attempts.
 const anonymousLimiter = buildLimiter({
@@ -43,4 +48,4 @@ const anonymousLimiter = buildLimiter({
   keyPrefix: 'anonymous'
 });
 
-module.exports = { globalLimiter, otpLimiter, anonymousLimiter };
+module.exports = { globalLimiter, otpLimiter, anonymousLimiter,authLimiter };
