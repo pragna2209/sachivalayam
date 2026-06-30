@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper dark:bg-paper-dark text-ink dark:text-ink-dark font-sans antialiased;
+    font-feature-settings: 'tnum' 1;
+  }
+
+  /* Telugu/Hindi script fallback - Inter doesn't cover these, so the
+     browser falls through to Noto Sans Telugu/Devanagari automatically
+     based on the characters present, no lang-switching of font-family
+     needed at the component level. */
+  :lang(te) {
+    font-family: 'Noto Sans Telugu', 'Inter', sans-serif;
+  }
+  :lang(hi) {
+    font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2E7D32;
+    outline-offset: 2px;
+  }
+
+  .dark :focus-visible {
+    outline-color: #E9E2C7;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* The status-thread: the recurring signature motif representing a
+     complaint's progression through the lifecycle/hierarchy. Used in the
+     timeline component, sidebar nav active state, and KPI connectors. */
+  .status-thread {
+    @apply relative pl-6;
+  }
+  .status-thread::before {
+    content: '';
+    @apply absolute -left-[17px] top-2 bottom-2 w-px bg-teal-100 dark:bg-teal-700;
+  }
+  .status-node {
+    @apply absolute -left-6 top-1 w-3.5 h-3.5 rounded-full border-2 border-teal-500 bg-paper dark:bg-paper-dark;
+  }
+  .status-node.is-complete {
+    @apply bg-teal-500;
+  }
+  .status-node.is-current {
+    @apply bg-rust-500 border-rust-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded bg-teal-500 px-4 py-2.5 text-sm font-medium text-paper transition-colors hover:bg-teal-600 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded border border-teal-500 px-4 py-2.5 text-sm font-medium text-teal-500 dark:text-teal-100 transition-colors hover:bg-teal-50 dark:hover:bg-teal-700 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded bg-rust-500 px-4 py-2.5 text-sm font-medium text-paper transition-colors hover:bg-rust-600 disabled:opacity-50;
+  }
+
+  .input-field {
+    @apply w-full rounded border border-sand-light bg-white dark:bg-teal-700 dark:border-teal-600 px-3 py-2.5 text-sm text-ink dark:text-ink-dark placeholder:text-sand focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition-colors;
+  }
+
+  .card {
+    @apply rounded border border-sand-light/60 dark:border-teal-700 bg-white dark:bg-teal-700/40 p-5;
+  }
+
+  .label-eyebrow {
+    @apply text-xs font-medium uppercase tracking-wide text-sand dark:text-sand-light;
+  }
+}

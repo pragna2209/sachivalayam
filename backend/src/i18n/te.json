@@ -1,0 +1,67 @@
+{
+  "auth.otp.sent": "OTP పంపబడింది",
+  "auth.otp.invalid": "చెల్లని OTP",
+  "auth.otp.expired": "OTP గడువు ముగిసింది",
+  "auth.otp.tooManyRequests": "చాలా OTP అభ్యర్థనలు. దయచేసి తర్వాత ప్రయత్నించండి",
+  "auth.otp.tooManyAttempts": "చాలా ప్రయత్నాలు. కొత్త OTP అభ్యర్థించండి",
+  "auth.login.success": "విజయవంతంగా లాగిన్ అయ్యారు",
+  "auth.register.success": "నమోదు విజయవంతమైంది",
+  "auth.logout.success": "విజయవంతంగా లాగ్ అవుట్ అయ్యారు",
+  "auth.token.refreshed": "టోకన్ రిఫ్రెష్ చేయబడింది",
+  "auth.token.invalid": "చెల్లని లేదా గడువు ముగిసిన టోకన్",
+  "auth.unauthorized": "మీకు అనుమతి లేదు",
+  "auth.forbidden": "ఈ చర్యను నిర్వహించడానికి మీకు అనుమతి లేదు",
+  "auth.phoneAlreadyRegistered": "ఈ ఫోన్ నంబర్ ఇప్పటికే నమోదు చేయబడింది",
+  "auth.password.invalidCredentials": "ఫోన్ నంబర్ లేదా పాస్‌వర్డ్ తప్పు",
+  "auth.password.set": "పాస్‌వర్డ్ విజయవంతంగా సెట్ చేయబడింది",
+  "auth.userNotFound": "వినియోగదారు కనుగొనబడలేదు",
+  "auth.accountDeactivated": "ఈ ఖాతా నిలిపివేయబడింది",
+
+  "complaint.created": "ఫిర్యాదు విజయవంతంగా నమోదు చేయబడింది",
+  "complaint.notFound": "ఫిర్యాదు కనుగొనబడలేదు",
+  "complaint.statusUpdated": "ఫిర్యాదు స్థితి నవీకరించబడింది",
+  "complaint.invalidTransition": "చెల్లని స్థితి మార్పు",
+  "complaint.reopenSuccess": "ఫిర్యాదు తిరిగి తెరవబడింది",
+  "complaint.reopenWindowExpired": "తిరిగి తెరిచే గడువు ముగిసింది",
+  "complaint.reopenLimitReached": "గరిష్ట తిరిగి తెరిచే పరిమితి చేరుకుంది",
+  "complaint.feedbackSubmitted": "అభిప్రాయం సమర్పించబడింది",
+  "complaint.feedbackOnlyAfterResolution": "పరిష్కారం తర్వాత మాత్రమే అభిప్రాయం ఇవ్వగలరు",
+  "complaint.reassigned": "ఫిర్యాదు తిరిగి కేటాయించబడింది",
+  "complaint.escalated": "ఫిర్యాదు పెంచబడింది",
+  "complaint.accessDenied": "ఈ ఫిర్యాదును చూడటానికి మీకు అనుమతి లేదు",
+
+  "anonymous.created": "మీ ట్రాకింగ్ ఐడిని సురక్షితంగా ఉంచండి",
+  "anonymous.invalidCredentials": "చెల్లని ట్రాకింగ్ ఐడి లేదా పిన్",
+  "anonymous.categoryNotAllowed": "ఈ వర్గం అనామక ఫిర్యాదుల కోసం అనుమతించబడదు",
+
+  "evidence.uploaded": "ఆధారం విజయవంతంగా అప్‌లోడ్ చేయబడింది",
+  "evidence.invalidFileType": "చెల్లని ఫైల్ రకం",
+  "evidence.fileTooLarge": "ఫైల్ పరిమాణం పరిమితిని మించిపోయింది",
+  "evidence.notFound": "ఆధార ఫైల్ కనుగొనబడలేదు",
+
+  "staff.created": "సిబ్బంది ఖాతా సృష్టించబడింది",
+  "staff.updated": "సిబ్బంది ఖాతా నవీకరించబడింది",
+  "staff.notFound": "సిబ్బంది కనుగొనబడలేదు",
+  "staff.noStaffMapped": "ఈ ప్రాంతానికి సిబ్బంది కేటాయించబడలేదు",
+
+  "geo.created": "విజయవంతంగా సృష్టించబడింది",
+  "geo.updated": "విజయవంతంగా నవీకరించబడింది",
+  "geo.notFound": "కనుగొనబడలేదు",
+
+  "category.created": "వర్గం సృష్టించబడింది",
+  "category.updated": "వర్గం నవీకరించబడింది",
+  "category.notFound": "వర్గం కనుగొనబడలేదు",
+
+  "department.created": "విభాగం సృష్టించబడింది",
+  "department.updated": "విభాగం నవీకరించబడింది",
+  "department.notFound": "విభాగం కనుగొనబడలేదు",
+
+  "notification.markedRead": "నోటిఫికేషన్ చదివినట్లు గుర్తించబడింది",
+
+  "settings.updated": "సెట్టింగ్ నవీకరించబడింది",
+
+  "validation.failed": "ధ్రువీకరణ విఫలమైంది",
+  "server.error": "అంతర్గత సర్వర్ లోపం",
+  "server.notFound": "మార్గం కనుగొనబడలేదు",
+  "rateLimit.exceeded": "చాలా అభ్యర్థనలు. దయచేసి తర్వాత ప్రయత్నించండి"
+}

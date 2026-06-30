@@ -1,0 +1,67 @@
+{
+  "auth.otp.sent": "OTP सफलतापूर्वक भेजा गया",
+  "auth.otp.invalid": "अमान्य OTP",
+  "auth.otp.expired": "OTP की समय सीमा समाप्त हो गई",
+  "auth.otp.tooManyRequests": "बहुत अधिक OTP अनुरोध। कृपया बाद में पुनः प्रयास करें",
+  "auth.otp.tooManyAttempts": "बहुत अधिक प्रयास। कृपया नया OTP प्राप्त करें",
+  "auth.login.success": "सफलतापूर्वक लॉगिन हो गया",
+  "auth.register.success": "पंजीकरण सफल हुआ",
+  "auth.logout.success": "सफलतापूर्वक लॉगआउट हो गया",
+  "auth.token.refreshed": "टोकन रिफ्रेश किया गया",
+  "auth.token.invalid": "अमान्य या समाप्त टोकन",
+  "auth.unauthorized": "आपको अनुमति नहीं है",
+  "auth.forbidden": "इस कार्य को करने की आपको अनुमति नहीं है",
+  "auth.phoneAlreadyRegistered": "यह फ़ोन नंबर पहले से ही पंजीकृत है",
+  "auth.password.invalidCredentials": "फ़ोन नंबर या पासवर्ड गलत है",
+  "auth.password.set": "पासवर्ड सफलतापूर्वक सेट किया गया",
+  "auth.userNotFound": "उपयोगकर्ता नहीं मिला",
+  "auth.accountDeactivated": "यह खाता निष्क्रिय कर दिया गया है",
+
+  "complaint.created": "शिकायत सफलतापूर्वक दर्ज की गई",
+  "complaint.notFound": "शिकायत नहीं मिली",
+  "complaint.statusUpdated": "शिकायत की स्थिति अपडेट की गई",
+  "complaint.invalidTransition": "अमान्य स्थिति परिवर्तन",
+  "complaint.reopenSuccess": "शिकायत सफलतापूर्वक फिर से खोली गई",
+  "complaint.reopenWindowExpired": "फिर से खोलने की समय सीमा समाप्त हो गई",
+  "complaint.reopenLimitReached": "फिर से खोलने की अधिकतम सीमा समाप्त हो गई",
+  "complaint.feedbackSubmitted": "प्रतिक्रिया सफलतापूर्वक सबमिट की गई",
+  "complaint.feedbackOnlyAfterResolution": "प्रतिक्रिया केवल समाधान के बाद ही दी जा सकती है",
+  "complaint.reassigned": "शिकायत सफलतापूर्वक पुनः सौंपी गई",
+  "complaint.escalated": "शिकायत सफलतापूर्वक आगे बढ़ाई गई",
+  "complaint.accessDenied": "आपको इस शिकायत तक पहुंच की अनुमति नहीं है",
+
+  "anonymous.created": "कृपया अपनी ट्रैकिंग आईडी सुरक्षित रखें",
+  "anonymous.invalidCredentials": "अमान्य ट्रैकिंग आईडी या पिन",
+  "anonymous.categoryNotAllowed": "इस श्रेणी की अनुमति गुमनाम शिकायतों के लिए नहीं है",
+
+  "evidence.uploaded": "प्रमाण सफलतापूर्वक अपलोड किया गया",
+  "evidence.invalidFileType": "अमान्य फ़ाइल प्रकार",
+  "evidence.fileTooLarge": "फ़ाइल का आकार अनुमत सीमा से अधिक है",
+  "evidence.notFound": "प्रमाण फ़ाइल नहीं मिली",
+
+  "staff.created": "स्टाफ खाता बनाया गया",
+  "staff.updated": "स्टाफ खाता अपडेट किया गया",
+  "staff.notFound": "स्टाफ सदस्य नहीं मिला",
+  "staff.noStaffMapped": "इस क्षेत्राधिकार के लिए कोई स्टाफ नियुक्त नहीं है",
+
+  "geo.created": "सफलतापूर्वक बनाया गया",
+  "geo.updated": "सफलतापूर्वक अपडेट किया गया",
+  "geo.notFound": "नहीं मिला",
+
+  "category.created": "श्रेणी बनाई गई",
+  "category.updated": "श्रेणी अपडेट की गई",
+  "category.notFound": "श्रेणी नहीं मिली",
+
+  "department.created": "विभाग बनाया गया",
+  "department.updated": "विभाग अपडेट किया गया",
+  "department.notFound": "विभाग नहीं मिला",
+
+  "notification.markedRead": "सूचना को पढ़ा गया चिह्नित किया गया",
+
+  "settings.updated": "सेटिंग अपडेट की गई",
+
+  "validation.failed": "सत्यापन विफल हुआ",
+  "server.error": "आंतरिक सर्वर त्रुटि",
+  "server.notFound": "मार्ग नहीं मिला",
+  "rateLimit.exceeded": "बहुत अधिक अनुरोध। कृपया बाद में पुनः प्रयास करें"
+}

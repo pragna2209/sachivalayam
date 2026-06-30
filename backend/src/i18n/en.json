@@ -1,0 +1,67 @@
+{
+  "auth.otp.sent": "OTP sent successfully",
+  "auth.otp.invalid": "Invalid OTP",
+  "auth.otp.expired": "OTP has expired",
+  "auth.otp.tooManyRequests": "Too many OTP requests. Please try again later",
+  "auth.otp.tooManyAttempts": "Too many attempts. Please request a new OTP",
+  "auth.login.success": "Logged in successfully",
+  "auth.register.success": "Registration successful",
+  "auth.logout.success": "Logged out successfully",
+  "auth.token.refreshed": "Token refreshed",
+  "auth.token.invalid": "Invalid or expired token",
+  "auth.unauthorized": "You are not authorized",
+  "auth.forbidden": "You do not have permission to perform this action",
+  "auth.phoneAlreadyRegistered": "This phone number is already registered",
+  "auth.password.invalidCredentials": "Incorrect phone number or password",
+  "auth.password.set": "Password set successfully",
+  "auth.userNotFound": "User not found",
+  "auth.accountDeactivated": "This account has been deactivated",
+
+  "complaint.created": "Complaint registered successfully",
+  "complaint.notFound": "Complaint not found",
+  "complaint.statusUpdated": "Complaint status updated",
+  "complaint.invalidTransition": "Invalid status transition",
+  "complaint.reopenSuccess": "Complaint reopened successfully",
+  "complaint.reopenWindowExpired": "The reopen window has expired",
+  "complaint.reopenLimitReached": "Maximum reopen limit reached",
+  "complaint.feedbackSubmitted": "Feedback submitted successfully",
+  "complaint.feedbackOnlyAfterResolution": "Feedback can only be given after resolution",
+  "complaint.reassigned": "Complaint reassigned successfully",
+  "complaint.escalated": "Complaint escalated successfully",
+  "complaint.accessDenied": "You do not have access to this complaint",
+
+  "anonymous.created": "Please keep your Tracking ID safe",
+  "anonymous.invalidCredentials": "Invalid Tracking ID or PIN",
+  "anonymous.categoryNotAllowed": "This category is not allowed for anonymous complaints",
+
+  "evidence.uploaded": "Evidence uploaded successfully",
+  "evidence.invalidFileType": "Invalid file type",
+  "evidence.fileTooLarge": "File size exceeds the allowed limit",
+  "evidence.notFound": "Evidence file not found",
+
+  "staff.created": "Staff account created",
+  "staff.updated": "Staff account updated",
+  "staff.notFound": "Staff member not found",
+  "staff.noStaffMapped": "No staff is mapped to this jurisdiction",
+
+  "geo.created": "Created successfully",
+  "geo.updated": "Updated successfully",
+  "geo.notFound": "Not found",
+
+  "category.created": "Category created",
+  "category.updated": "Category updated",
+  "category.notFound": "Category not found",
+
+  "department.created": "Department created",
+  "department.updated": "Department updated",
+  "department.notFound": "Department not found",
+
+  "notification.markedRead": "Notification marked as read",
+
+  "settings.updated": "Setting updated",
+
+  "validation.failed": "Validation failed",
+  "server.error": "Internal server error",
+  "server.notFound": "Route not found",
+  "rateLimit.exceeded": "Too many requests. Please try again later"
+}
